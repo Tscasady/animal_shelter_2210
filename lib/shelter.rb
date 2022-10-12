@@ -20,4 +20,10 @@ class Shelter
         @pets.length >  @capacity ? true : false
     end
 
+    def adopt
+        until @pets.length <= @capacity
+            @pets.pop
+        end
+    end
+
 end
