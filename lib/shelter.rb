@@ -16,4 +16,8 @@ class Shelter
         @pets.map{|pet| pet + '!'}
     end
 
+    def over_capacity?
+        @pets.length >  @capacity ? true : false
+    end
+
 end
